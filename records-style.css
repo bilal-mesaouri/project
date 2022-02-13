@@ -1,0 +1,197 @@
+::-webkit-scrollbar{
+	
+	width: 10px;
+	
+}
+::-webkit-scrollbar-track{
+	background-color: black;
+
+}
+::-webkit-scrollbar-thumb{
+	background-color: #777;
+	border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover{
+	background-color: #999;
+}
+ body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+/*	min-width:1000px;         Suppose you want minimum width of 1000px 
+  	width: auto !important; */  /*Firefox will set width as auto */
+    /*width:1000px;*/
+    
+    /*background-image: linear-gradient(to right ,#ec008c,#fc6767);*/
+}
+
+
+.main{
+	height: 100%;
+	position: relative;
+	background-image: linear-gradient(to right ,#ED213A,#93291E);
+	/*position: absolute;*/
+}
+
+.wrap{
+	
+	width: 1000px;
+	top: 80px;
+	background-color: white;
+	margin: auto;
+	position: relative;
+
+}
+.user{
+	position: absolute;
+	top: 10px;
+	right: 50%;
+	transform: translate(50%);
+	width: 1000px;
+	height: 50px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	font-weight: bold;
+	font-size: 22px;
+	font-family: calibri;
+}
+.user form{
+	display: flex;
+}
+.btn {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+/*  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;*/
+  margin: 0;
+  max-height: 25px;
+  max-width: 80px;
+  outline: none;
+  /*padding: 16px 24px;*/
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.btn:disabled {
+  pointer-events: none;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+.tabl{
+
+	border-collapse: collapse;
+	width: 100%;
+
+}
+.tabl tr :nth-of-type(even){
+	background-color: #f3f3f3;
+}
+.tabl tr td {
+	text-align: center;
+	padding: 12px 15px;
+	width: 60px;
+	height: 120px;
+}
+.tabl tr {
+	border-bottom: 1px solid gray;
+}
+
+.footer{
+	height: 40px;
+	background-color: black;
+	margin-top: 150px;
+	color: white;
+}
+.pic-res{
+	width: 80px;
+	height: 80px;
+	background-color: red;
+	color: white;
+}
+
+
+.pop{
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	
+}
+.content{
+	width: 500px;
+	height: 400px;
+	background-color: white;
+	position: absolute;
+	top: 150px;
+	left: 50%;
+	transform: translate(-50%);
+
+}
+.content form {
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.inp1{
+	width: 40%;
+	border-right: 1px solid gray;
+		display: flex;
+	padding-left: 5px;
+	align-items: center;
+
+
+}
+
+.inp2{
+	width: 40%;
+	/*background-color: blue;*/
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+	padding-left: 5px;
+	display: flex;
+	align-items: center;
+	/*background-color: cyan;*/
+}
+.inp3{
+	width: 20%;
+	/*background-color: blue;*/
+	border-left: 1px solid gray;
+	padding-left: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*background-color: cyan;*/
+}
+.content form input {
+	margin-top: 5px ;
+}
